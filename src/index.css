@@ -1,13 +1,188 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  transition: background 2.5s;
+}
+
+@font-face {
+  font-family: myFont;
+  src: url(./MyMedieval.ttf);
+}
+
+h1, h2, h3, p {
+  font-family: myFont;
+}
+
+.headerDiv {
+  position: relative;
+  top: 0px;
+  height: 90px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 3px solid black;
+  background-image: url("./images/wood.jpg");
+}
+
+.headerText {
+  color: whitesmoke;
+}
+
+.signature_div {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.signature {
+  font-size: 13px;
+  color: whitesmoke;
+}
+
+.footerButton {
+  width: 140px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: gainsboro;
+  outline: none;
+  cursor: pointer;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-family: myFont;
+  font-size: 16px;
+}
+
+.footerButtonsDiv {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 0px;
+  height: 90px;
+  border-top: 3px solid #090909;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: whitesmoke; 
+}
+
+.werewolfImage {
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+}
+
+.villagerImage {
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+}
+
+.form {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  top: 45px;
+}
+
+.input {
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 300px;
+  height: 27px;
+  outline: none;
+}
+
+.form_button {
+  width: 31px;
+  height: 31px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-left: 7px;
+  outline: none;
+}
+
+.buttonDiv {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.button {
+  width: 140px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: gainsboro;
+  outline: none;
+  cursor: pointer;
+  margin-left: 8px;
+  margin-right: 8px;
+  font-family: myFont;
+  font-size: 16px;
+}
+
+.gameTextDiv {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.gameText1 {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.select_form {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.popup {
+  position: absolute;
+  height: 500px;
+  width: 400px;
+  z-index: 2;
+  border: 3px solid black;
+  left: 0; 
+  right: 0;
+  top: 110px;
+  margin-left: auto; 
+  margin-right: auto;
+  background-color: gainsboro;
+  text-align: center;
+}
+
+#kill_button, #kick_button {
+  margin-top: 20px;
+}
+
+.label {
+  font-family: myFont;
+  margin-top: 13px;
+  font-size: 20px;
+}
+
+.option1 {
+  font-family: myFont;
+  margin-left: 5px;
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 150px;
+  height: 25px;
+  outline: none;
+  font-size: 14px;
+}
+
+.pop_up_text {
+  font-family: myFont;
+  font-size: 25px;
+  margin-bottom: 40px;
+  margin-top: 10px;
 }
